@@ -7,14 +7,11 @@ import {
 import { widgetKeys, widgetKeyMap } from "../widgets/Widget";
 
 const fontOptions = [
-  { label: "Sans", value: "Product" },
+  { label: "Atkinson Hyperlegible", value: "Atkinson Hyperlegible" },
   { label: "Jakarta", value: "JakartaSans" },
   { label: "Circular", value: "Circular" },
-  { label: "Futura", value: "Futura" },
-  { label: "DIN", value: "DINMediumRegular" },
   { label: "Cardo Regular", value: "CardoRegular" },
   { label: "Cardo Italic", value: "CardoItalic" },
-  { label: "system-ui", value: "system-ui" },
 ];
 
 export const WidgetPicker = ({ setDroppingWidgetData }) => {

@@ -19,7 +19,7 @@ cat > $MANIFEST_FILE <<- EOM
 {
   "manifest_version": 3,
   "name": "Minim",
-  "description": "A minimal newtab for Chrome",
+  "description": "A minimal newtab for Firefox",
   "version": "$new_version",
   "action": {
     "default_popup": "index.html",
@@ -43,4 +43,4 @@ EOM
 cp src/logos/* $TEMP_DIR
 rm -f *.zip
 zip -r $new_version_package_name $TEMP_DIR
-echo "Chrome extension created: $new_version_package_name"
+echo "Firefox extension created: $new_version_package_name"

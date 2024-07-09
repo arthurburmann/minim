@@ -63,7 +63,7 @@ export const WallpaperSurface = ({ tick }: {}) => {
 
   return (
     <div>
-      <div
+      {/* <div
         className="shade"
         style={{
           opacity: wallpaper.shade / 100,
@@ -74,20 +74,21 @@ export const WallpaperSurface = ({ tick }: {}) => {
           opacity: wallpaper.tint / 100,
         }}
         className="tint"
-      ></div>
-      <div
-        className="dots"
-        style={{
-          opacity: wallpaper.texture ? 1 : 0,
-        }}
-      ></div>
+      ></div> */}
       <div
         className="wallpaper-container"
         style={{
           filter: wallpaper.grayScale ? `grayscale(1)` : ``,
         }}
       >
-        <div className="wallpaper" style={wallpaperStyle}></div>
+        <div
+          className="wallpaper-blur"
+          style={{
+            filter: wallpaper.blur ? `blur(0.25rem)` : ``,
+          }}
+        >
+          <div className="wallpaper" style={wallpaperStyle}></div>
+        </div>
       </div>
     </div>
   );

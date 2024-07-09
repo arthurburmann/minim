@@ -1,18 +1,19 @@
 import version from "../version.json";
 import logo16 from "../logos/logo.svg";
-import kofi2 from "../logos/kofi2.png";
 
 export function About() {
   return (
     <div className="about-page">
       <br />
-      <h1>Minim</h1>
+      <h1>Minim²</h1>
       <img src={logo16} />
       <br />
       <br />v{version.version}
       <br />
       <br />
       Designed by <a href="https://twitter.com/atulvinayak">@atulvinayak</a>
+      <br />
+      Forked by <a href="https://twitter.com/0x013d">@0x013d</a>
       <br />
       <br />
       Weather Data by <a href="https://openweathermap.org/">OpenWeather</a>
@@ -21,17 +22,8 @@ export function About() {
       <br />
       <br />
       <br />
-      <a href="https://ko-fi.com/S6S51GBT3" target="_blank">
-        <img
-          src={kofi2}
-          className="kofi-button"
-          alt="Buy Me a Coffee at ko-fi.com"
-        />
-      </a>
-      <br /> <br />
       <div className="white">
-        Life's purpose surges, Like the ocean's endless dance, Boundless,
-        intertwined.
+        Everything has beauty, but not everyone sees it.
       </div>
     </div>
   );

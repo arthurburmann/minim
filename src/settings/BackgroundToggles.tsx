@@ -27,14 +27,14 @@ export function BackgroundToggles() {
       />
       <IconButton
         icon={mdiBlur}
-        tooltip="Texture"
-        on={wallpaper.texture}
+        tooltip="Blur"
+        on={wallpaper.blur}
         onClick={() => {
           wallpaperDispatch({
             type: "UPDATE_WALLPAPER",
             payload: {
               ...wallpaper,
-              texture: !wallpaper.texture,
+              blur: !wallpaper.blur,
             },
           });
         }}
